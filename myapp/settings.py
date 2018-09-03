@@ -14,8 +14,9 @@ import os
 import environ
 
 env = environ.Env(
-DEBUG=(bool, False)
+  DEBUG=(bool, False)
 )
+
 # reading .env file
 environ.Env.read_env()
 
@@ -35,9 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'django.contrib.admin',
